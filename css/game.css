@@ -1,0 +1,25 @@
+@import url("style.css");
+  
+
+  #teamcontainer {
+    width:  33vw;
+    height: 33vw;
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+main {
+  font-size: 300%;
+}
+  
+  canvas {
+    border: 0.1vw solid white;
+/*     width: 33vw; 
+    height: 33vw; */
+    margin: 0.99vw auto;
+    
+  }
+
+  #footerimg {
+    margin-bottom:  3.8vw;
+  }

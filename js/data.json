@@ -1,0 +1,32 @@
+var teamMembers = `[{
+"name":"Kimberley", 
+"email":"kimberley@index.com",
+"image":"person1.jpg",
+"food":"Sushi",
+"age":"40",
+"hobby":"cooking"
+},
+{
+"name":"Dominik",
+"email":"dominik@index.com",
+"image":"person2.jpg",
+"food":"Schnitzel",
+"age":"25",
+"hobby":"cinema"
+},
+{
+"name":"Christian", 
+"email":"christian@index.com",
+"image":"person3.jpg",
+"food":"Mettbrötchen",
+"age":"37",
+"hobby":"treasure hunting"
+},
+{
+"name":"Stephan", 
+"email":"stephan@index.com",
+"image":"person4.jpg",
+"food":"Schnitzel",
+"age":"28",
+"hobby":"music"
+}]`;

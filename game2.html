@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Game</title>
+    <link rel="stylesheet" type="text/css" href="./css/game2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="headerflex">
+                <div class="headerdiv">
+                    <a href="index.html" title="Home" class="navlink">HOME</a>
+                </div>
+                <div class="headerdiv">
+                    <a href="news.html" title="News" class="navlink">NEWS</a>
+                </div>
+                <div class="headerdiv" id="logotxt">
+                    <img src="./img/logo.png" alt="logo" id="logo">
+                    <h1>GAME</h1>
+                </div>
+                <div class="headerdiv">
+                    <a href="game2.html" title="Game" class="navlink">GAME</a>
+                </div>
+                <div class="headerdiv" id="dropdown">
+                    <span>
+                        <p class="navlink">TEAM</p>
+                    </span>
+                    <div class="dropdown-content">
+                        <a href="profile1.html" title="Kimberley" class="droplink">
+                            <p>KIMBERLEY</p>
+                        </a>
+                        <a href="profile2.html" title="Dominik" class="droplink">
+                            <p>DOMINIK</p>
+                        </a>
+                        <a href="profile3.html" title="Christian" class="droplink">
+                            <p>CHRISTIAN</p>
+                        </a>
+                        <a href="profile4.html" title="Stephan" class="droplink">
+                            <p>STEPHAN</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="gamecontainer">
+                <div class="leftside">
+                    <div class="leftimg"></div>
+                    <button onclick="rollDicePlayer1()" id="btn1"></button>
+                    <h1 id="round1"></h1>
+                    <div id="diceresult1"></div>
+                    <p id="result1" class="result"></p>
+                </div>
+                <div class="middle">
+                    <h1 id="versus"></h1>
+                    <p id="winner"></p>
+                </div>
+                <div class="middle2">
+                    <h1 id="versus">VS.</h1>
+                    <p id="winner2"></p>
+                </div>
+                <div class="rightside">
+                    <div class="rightimg"></div>
+                    <button onclick="rollDicePlayer2()" id="btn2"></button>
+                    <h1 id="round2"></h1>
+                    <div id="diceresult2"></div>
+                    <p id="result2" class="result"></p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footerflex">
+                <div class="footerbox">
+                    <a href="contact.html" title="Contact" class="navlink">CONTACT</a>
+                </div>
+                <div class="footerbox">
+                    <a href="https://www.codefactory.wien/" title="CodeFactory Vienna" target="_blank" class="footerlogolink">
+                        <div id="footerimg"></div>
+                    </a>
+                </div>
+                <div class="footerbox">
+                    <a href="legalinfo.html" title="Impressum" class="navlink">IMPRESSUM</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="./js/data.json"></script>
+<script src="./js/game2.js"></script>
+</body>
+
+</html>

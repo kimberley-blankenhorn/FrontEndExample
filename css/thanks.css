@@ -1,0 +1,68 @@
+@import url("style.css");
+
+#logotxt {
+    text-align:  center;
+}
+
+/*Media Query - Monitor---------------------------------------------------------*/
+@media screen and (min-width: 481px) {
+    #teamcontainer {
+        display: flex;
+        margin: 0 auto;
+        width: 50vw;
+        justify-content: center;
+        align-items: center;
+        padding: 1vw 3vw 1vw 1.5vw;
+        border-radius: 120px;
+        margin-bottom: 1vw;
+        box-shadow: 0 6px 6px rgba(255, 255, 255, 0.05), 0 6px 6px rgba(255, 255, 255, 0.05);
+        background-color: rgba(255, 255, 255, 0.05);
+        height: 20vw;
+        font-size: 4vw;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        margin: 0 auto 125px;
+        margin-top: 75px;
+    }
+}
+
+/*Media Query - Phone---------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+    #teamcontainer {
+        display: flex;
+        margin: 0 auto;
+        width: 60vw;
+        height:  60vh;
+        justify-content: center;
+        align-items: center;
+        padding: 1vw 3vw 1vw 1.5vw;
+        border-radius: 4vh;
+        margin-bottom: 1vw;
+        box-shadow: 0 6px 6px rgba(255, 255, 255, 0.05), 0 6px 6px rgba(255, 255, 255, 0.05);
+        background-color: rgba(255, 255, 255, 0.05);
+        
+    }
+
+    #teamcontainer h1 {
+        padding:  3vw;
+        font-size: 9vw;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        margin: 0 auto 125px;
+        margin-top: 75px;
+    }
+}

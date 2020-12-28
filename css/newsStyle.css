@@ -1,0 +1,85 @@
+@import url("style.css");
+
+/*Media Query - Monitor---------------------------------------------------------*/
+@media screen and (min-width: 481px) {
+    h4 {
+        color: white;
+        font-family: roboto;
+    }
+
+    #teamcontainer {
+        margin: 0 auto;
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .teambox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: green;
+        width: 25vw;
+        height: 10vw;
+        margin: 1vw 0 2vw 0;
+        padding: 3vw 3vw;
+        border-radius: 60px;
+        box-shadow: 0 6px 6px rgba(255, 255, 255, 0.05), 0 6px 6px rgba(255, 255, 255, 0.05);
+        background-color: rgba(255, 255, 255, 0.05);
+        transition: all 0.5s ease;
+    }
+
+    .imgname {
+        padding: 2vw 0;
+    }
+
+    .imgname img {
+        align-content: center;
+        width: 18vw;
+        border-radius: 60px;
+    }
+}
+
+/*Media Query - Phone---------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+    h4 {
+        color: white;
+        font-family: roboto;
+    }
+
+    #teamcontainer {
+        margin: 30vw auto 0 auto;
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .teambox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: green;
+        width: 60vw;
+        height: 30vw;
+        margin: 1vw 0 2vw 0;
+        padding: 3vw 3vw;
+        border-radius: 3.5vh;
+        box-shadow: 0 6px 6px rgba(255, 255, 255, 0.05), 0 6px 6px rgba(255, 255, 255, 0.05);
+        background-color: rgba(255, 255, 255, 0.05);
+        transition: all 0.5s ease;
+    }
+
+    .imgname {
+        padding: 2vw 0;
+    }
+
+    .imgname img {
+        align-content: center;
+        width: 35vw;
+        border-radius: 2vh;
+    }
+}

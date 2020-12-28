@@ -1,0 +1,444 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    border: 0;
+}
+
+/* Global */
+a {
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+
+}
+
+.middle2 {
+    display: none;
+}
+
+/*Media Query - Monitor---------------------------------------------------------*/
+@media screen and (min-width: 481px) {
+
+
+
+    /*Container containing header, main content and footer*/
+    .container {
+        background-image: url("../img/background.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        min-height: 100vh;
+    }
+
+    /*Header*/
+    .headerflex {
+        padding: 2vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .headerdiv {
+        width: 10%;
+        text-align: center;
+    }
+
+    h1 {
+        color: white;
+        font-family: Roboto;
+        text-align: center;
+    }
+
+    .navlink {
+        color: white;
+        font-size: 1.5vw;
+        font-weight: 600;
+        font-family: Roboto;
+        transition: all 0.5s ease;
+    }
+
+    /*Logo */
+    #logo {
+        width: 3vw;
+    }
+
+    #logotxt {
+        text-align: center;
+    }
+
+    /*Hover for the links in the nav bar*/
+    .navlink:hover {
+        color: rgba(0, 162, 255, 1);
+        font-size: 1.5vw;
+        font-weight: 600;
+        font-family: Roboto;
+    }
+
+    /*Drop down menu in the nav bar*/
+
+    #dropdown {
+        position: relative;
+        display: inline-block;
+
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(183, 27, 101, 0);
+        min-width: 160px;
+        margin-left: 2.8vw;
+        z-index: 1;
+        padding-top: 0.5vw;
+        transition: all 0.5s ease;
+        text-align: left;
+    }
+
+    .dropdown-content a {
+        font-size: 1vw;
+        margin-top: 1vw;
+
+
+    }
+
+    #dropdown:hover .dropdown-content {
+        display: block;
+        /*Links in drop down menu*/
+    }
+
+    .droplink {
+        color: white;
+        font-size: 1vw;
+        font-weight: 600;
+        font-family: Roboto;
+        transition: all 0.5s ease;
+
+    }
+
+    .droplink:hover {
+        color: rgba(0, 162, 255, 1);
+        font-size: 1.2vw;
+        font-weight: 600;
+        font-family: Roboto;
+    }
+
+    /*Containers in the main section*/
+    #teamcontainer {
+        margin: 0 auto;
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .teambox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: green;
+        width: 14vw;
+        height: 14vw;
+        margin: 1vw 0 2vw 0;
+        padding: 1vw 1vw;
+        border-radius: 4vh;
+        box-shadow: 0 6px 6px rgba(255, 255, 255, 0.05), 0 6px 6px rgba(255, 255, 255, 0.05);
+        background-color: rgba(255, 255, 255, 0.05);
+        transition: all 0.5s ease;
+    }
+
+    /*Hover for boxes in main section*/
+    .teambox:hover {
+        background-color: rgba(0, 162, 255, 1);
+        box-shadow: 0 6px 6px rgba(0, 162, 255, 0.15), 0 6px 6px rgba(0, 162, 255, 0.15);
+        transform: scale(1.1);
+    }
+
+    .teamimg {
+        background-color: white;
+        border-radius: 3vh;
+        width: 7.5vw;
+    }
+
+    .teambox p {
+        font-family: Roboto;
+        margin-top: 0.2vw;
+        margin-bottom: 0.5vw;
+    }
+
+    .teambox h5 {
+        font-family: Roboto;
+    }
+
+    .imgname {
+        text-align: center;
+    }
+
+    .imgname h4 {
+        font-family: Roboto;
+        font-size: 1.2vw;
+        margin-top: 0.5vw;
+    }
+
+    /*CSS for expanded content in teambox*/
+    .moreInfo {
+        margin-left: 0.5vw;
+    }
+
+    .break {
+        flex-basis: 100%;
+        height: 0;
+    }
+
+    /*Footer*/
+    .footerflex {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #footerimg {
+        margin-bottom: 1.65vw;
+        width: 10vw;
+        background-image: url("../img/logo_cf.png");
+        background-repeat: no-repeat;
+        height: 3vw;
+        background-size: contain;
+        transition: all 0.5s ease;
+    }
+
+    /*CFLogo changes when you hover over*/
+    #footerimg:hover {
+        background-image: url("../img/logo_cf-alt.png");
+    }
+
+    .footerbox {
+        width: 10%;
+    }
+
+    .footerbox a {
+
+        font-size: 1.25vw;
+        color: rgba(255, 255, 255, 0.33);
+    }
+
+    /*Hover for links in footer*/
+    .footerbox a:hover {
+        font-size: 1.25vw;
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+/*Media Query - Phone---------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+
+
+    /*Container containing header, main content and footer*/
+    .container {
+        background-image: url("../img/background_phone.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        min-height: 100vh;
+    }
+
+    /*Header*/
+    .headerflex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 4vw 0;
+    }
+
+    h1 {
+        font-size: 2.5vw;
+        color: white;
+        font-family: Roboto;
+        text-align: center;
+    }
+
+    .headerdiv {
+        width: 10%;
+        text-align: center;
+    }
+
+    #logotxt.headerdiv {
+        width: 15%;
+    }
+
+    .navlink {
+        color: white;
+        font-size: 3.5vw;
+        font-weight: 600;
+        font-family: Roboto;
+        transition: all 0.5s ease;
+    }
+
+    /*Header link hover*/
+    .navlink:hover {
+        color: rgba(0, 162, 255, 1);
+    }
+
+    /*Logo*/
+    #logo {
+        width: 6vw;
+    }
+
+    #logotxt {
+        text-align: center;
+    }
+
+    /*drop down menu*/
+    #dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 1vw;
+        z-index: 1;
+        padding-top: 3vw;
+        transition: all 0.5s ease;
+        text-align: left;
+    }
+
+    .dropdown-content p {
+        font-size: 4vw;
+        margin-bottom: 4vw;
+    }
+
+    #dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .droplink {
+        color: white;
+        font-size: 3vw;
+        font-weight: 600;
+        font-family: Roboto;
+        transition: all 0.5s ease;
+    }
+
+    .droplink:hover {
+        font-size: 3vw;
+        font-weight: 600;
+        font-family: Roboto;
+    }
+
+    /*Containers in the main section*/
+    #teamcontainer {
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .teambox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: green;
+        width: 35vw;
+        height: 35vw;
+        margin: 1vw 0 2vw 0;
+        padding: 0.5vw 0.5vw;
+        border-radius: 3.5vh;
+        box-shadow: 0 6px 6px rgba(255, 255, 255, 0.05), 0 6px 6px rgba(255, 255, 255, 0.05);
+        background-color: rgba(255, 255, 255, 0.05);
+        transition: all 0.5s ease;
+    }
+
+    .teamimg {
+        background-color: white;
+        border-radius: 2vh;
+        width: 20vw;
+    }
+
+    .teambox p {
+        font-family: Roboto;
+        margin-top: 0.2vw;
+        margin-bottom: 0.5vw;
+    }
+
+    .teambox a {
+        font-family: Roboto;
+        font-size: 3vw;
+        margin-top: 2vw;
+        color: white;
+    }
+
+    .teambox h5 {
+        font-family: Roboto;
+
+    }
+
+    .imgname {
+        text-align: center;
+    }
+
+    .imgname h4 {
+        font-family: Roboto;
+        font-size: 3vw;
+        margin-top: 2vw;
+    }
+
+    /*CSS for expanded content in teambox*/
+    .moreInfo {
+        margin-left: 0.5vw;
+    }
+
+    .break {
+        display: none;
+    }
+
+
+    /*Footer*/
+    .footerflex {
+        padding-top: 3vw;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #footerimg {
+        margin-bottom: 1.65vw;
+        width: 20vw;
+        background-image: url("../img/logo_cf.png");
+        background-repeat: no-repeat;
+        height: 6vw;
+        background-size: contain;
+        transition: all 0.5s ease;
+    }
+
+    /*CFLogo changes when you hover over*/
+    #footerimg:hover {
+        background-image: url("../img/logo_cf-alt.png");
+    }
+
+    .footerbox {
+        width: 15%;
+    }
+
+    .footerbox a {
+
+        font-size: 2.5vw;
+        color: rgba(255, 255, 255, 1);
+    }
+    /*Hover for links in footer*/
+    .footerbox a:hover {
+        font-size: 1.25vw;
+        color: rgba(255, 255, 255, 1);
+    }
+}

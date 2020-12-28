@@ -1,0 +1,416 @@
+@import url("style.css");
+
+
+.container1 {
+    display: flex;
+    margin: 0 auto;
+    width: 50vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 3vw 1vw 1.5vw;
+    border-radius: 4vh;
+    margin-bottom: 1vw;
+    box-shadow: 0 6px 6px rgba(255, 255, 255, 0.05), 0 6px 6px rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.container1 img {
+    width: 6vw;
+}
+
+.container1 h2 {
+    font-family: Roboto;
+    font-size: 2.5vw;
+    color: white;
+
+}
+
+.container1 p {
+    font-family: Roboto;
+    font-size: 1.5vw;
+    color: white;
+    text-align: justify;
+}
+
+.profileText {
+    display: flex;
+    margin: 0 auto;
+    width: 60vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw;
+    border-radius: 4vh;
+    box-shadow: 0 6px 6px rgba(255, 255, 255, 0.05), 0 6px 6px rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.profileText p {
+    font-family: Roboto;
+    font-size: 1.5vw;
+    color: white;
+    text-align: justify;
+}
+
+.kim {
+    text-align: center;
+
+}
+
+.profileText h3 {
+    font-family: Roboto;
+    font-size: 1.5vw;
+    color: white;
+
+}
+
+.image1 img {
+    width: 9vw;
+
+    border-radius: 4vh;
+}
+
+.meter {
+    height: 20px;
+    /* Can be anything */
+    position: relative;
+    background: #555;
+    border-radius: 4vh;
+    padding: 10px;
+    margin: 1vw;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.meter>span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(43, 194, 83);
+    background-image: linear-gradient(center bottom,
+        rgb(43, 194, 83) 37%,
+        rgb(84, 240, 84) 69%);
+    box-shadow:
+        inset 0 2px 9px rgba(255, 255, 255, 0.3),
+        inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+
+}
+
+.orange {
+    background-color: #f1a165;
+    background-image: linear-gradient(to bottom, #f1a165, #f36d0a);
+}
+
+.red {
+    background-color: #f0a3a3;
+    background-image: linear-gradient(to bottom, #f0a3a3, #f42323);
+}
+
+.progressContainer {
+    /*display: flex;
+    flex-direction: column*/
+    margin: 0 auto;
+    margin-top: 1vw;
+    width: 30vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 3vw 1vw 1.5vw;
+    border-radius: 4vh;
+    margin-bottom: 1vw;
+    box-shadow: 0 6px 6px rgba(255, 255, 255, 0.05), 0 6px 6px rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
+
+}
+
+.progressContainer p {
+    font-family: Roboto;
+    font-size: 1.5vw;
+    color: white;
+    margin-left: 2vw;
+}
+
+.skill {
+    text-align: center;
+    font-size: 2vw !important;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    #logo {
+        width: 6vw;
+    }
+
+    #logotxt {
+        text-align: center;
+    }
+
+    .container {
+        background-image: url("../img/background.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        min-height: 100vh;
+    }
+
+    .headerflex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 4vw 0;
+    }
+
+    h1 {
+        font-size: 2.5vw;
+        color: white;
+        font-family: Roboto;
+        text-align: center;
+    }
+
+    .navlink {
+        color: white;
+        font-size: 3.5vw;
+        font-weight: 600;
+        font-family: Roboto;
+        transition: all 0.5s ease;
+    }
+
+    .navlink:hover {
+        color: rgba(0, 162, 255, 1);
+    }
+
+    .droplink {
+        color: white;
+        font-size: 3vw;
+        font-weight: 600;
+        font-family: Roboto;
+        transition: all 0.5s ease;
+
+    }
+
+    .droplink:hover {
+        font-size: 3vw;
+        font-weight: 600;
+        font-family: Roboto;
+    }
+
+    #teamcontainer {
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .teambox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: green;
+        width: 35vw;
+        height: 35vw;
+        margin: 1vw 0 2vw 0;
+        padding: 0.5vw 0.5vw;
+        border-radius: 3vh;
+        box-shadow: 0 6px 6px rgba(255, 255, 255, 0.05), 0 6px 6px rgba(255, 255, 255, 0.05);
+        background-color: rgba(255, 255, 255, 0.05);
+        transition: all 0.5s ease;
+    }
+
+    .teamimg {
+        background-color: white;
+        border-radius: 3vh;
+        width: 20vw;
+    }
+
+    .teambox p {
+        font-family: Roboto;
+        margin-top: 0.2vw;
+        margin-bottom: 0.5vw;
+    }
+
+    .teambox a {
+        font-family: Roboto;
+        font-size: 3vw;
+        margin-top: 2vw;
+        color: white;
+    }
+
+    .teambox h5 {
+        font-family: Roboto;
+
+    }
+
+    .imgname {
+        text-align: center;
+    }
+
+    .imgname h4 {
+        font-family: Roboto;
+        font-size: 3vw;
+        margin-top: 2vw;
+    }
+
+
+
+    .moreInfo {
+        margin-left: 0.5vw;
+    }
+
+    .break {
+        display: none;
+    }
+
+
+    #dropdown {
+        position: relative;
+        display: inline-block;
+
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 1vw;
+        z-index: 1;
+        padding-top: 3vw;
+        transition: all 0.5s ease;
+        text-align: left;
+    }
+
+    .dropdown-content p {
+        font-size: 4vw;
+        margin-bottom: 4vw;
+    }
+
+    #dropdown:hover .dropdown-content {
+        display: block;
+
+    }
+
+    .footerflex {
+        padding-top: 1vw;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #footerimg {
+        margin-bottom: 1.65vw;
+        width: 20vw;
+        background-image: url("../img/logo_cf.png");
+        background-repeat: no-repeat;
+        height: 6vw;
+        background-size: contain;
+        transition: all 0.5s ease;
+    }
+
+    #footerimg:hover {
+        background-image: url("../img/logo_cf-alt.png");
+    }
+
+    .headerdiv {
+        width: 10%;
+        text-align: center;
+    }
+
+    .footerbox {
+        width: 15%;
+        margin-top: 20vw;
+    }
+
+    .footerbox a {
+
+        font-size: 2.5vw;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .footerbox a:hover {
+        font-size: 1.25vw;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .profileText {
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 3vw;
+        width: 60vw;
+        height: 30vw;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3vw;
+        border-radius: 3vh;
+        box-shadow: 0 6px 6px rgba(255, 255, 255, 0.05), 0 6px 6px rgba(255, 255, 255, 0.05);
+        background-color: rgba(255, 255, 255, 0.05);
+
+    }
+
+    .profileText p {
+        font-size: 2.5vw;
+    }
+
+    .profileText h3 {
+        font-size: 3vw;
+    }
+
+    .container1 {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 30vw;
+        width: 45vw;
+        height: 35vw;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 1.5vw 3vw 1vw 1.5vw;
+        border-radius: 3vh;
+        margin-bottom: 3vw;
+        box-shadow: 0 6px 6px rgba(255, 255, 255, 0.05), 0 6px 6px rgba(255, 255, 255, 0.05);
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .meter {
+        height: 20px;
+        /* Can be anything */
+        position: relative;
+        background: #555;
+        border-radius: 3vh;
+        padding: 0;
+        margin: 1vw;
+        box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+    }
+
+    .progressContainer {
+        /*display: flex;
+    flex-direction: column*/
+        margin: 0 auto;
+        margin-top: 1vw;
+        width: 51.5vw;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1vw 3vw 1vw 1.5vw;
+        border-radius: 3vh;
+        margin-bottom: 1vw;
+        box-shadow: 0 6px 6px rgba(255, 255, 255, 0.05), 0 6px 6px rgba(255, 255, 255, 0.05);
+        background-color: rgba(255, 255, 255, 0.05);
+
+    }
+
+    .image1 {
+        padding:  1vw 0;
+    }
+
+    .image1 img {
+        width: 50%;
+        margin-left: 28%;
+        border-radius: 3vh;
+    }
+
+}
